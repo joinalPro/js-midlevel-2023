@@ -22,17 +22,38 @@
             </ul>
         </section>
         <section>
-
+            <h1 id="fruits-title">Fruits I like most</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Banana</li>
+                <li>Grapes</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places-title">Places I will visit</h1>
+            <ul>
+                <li class="imporant-places">Bandorbon</li>
+                <li class="imporant-places">Rangamati</li>
+                <li class="imporant-places">Kuwakata</li>
+                <li class="imporant-places">Rongpur</li>
+            </ul>
         </section>
     </main>
     <script src="js/dom.js"></script>
     <script>
-        const student = {
-            name: 'ABUL',
-            ID: 11,
-            study: function (time){
-                console.log(time, 'study kortese');
+        const liCollection = document.getElementsByTagName('li');
+        for(const li of liCollection){
+            // console.log(li.innerText);
+        }
+        const allHeadings = document.getElementsByTagName('h1')
+        for(const h1 of allHeadings){
+            // console.log(h1.innerText);
+
             }
+        const places = document.getElementsByClassName('imporant-places');
+        for(const place of places){
+            console.log(place.innerText);
         }
     </script>
 
