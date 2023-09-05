@@ -21,8 +21,8 @@
                 <li>Wednesday</li>
             </ul>
         </section>
-        <section>
-            <h1 id="fruits-title">Fruits I like most</h1>
+        <section class="fruits-container">
+            <h1 id="fruits-title" class="some-class bg-class">Fruits I like most</h1>
             <ul>
                 <li>Apple</li>
                 <li>Orange</li>
@@ -54,6 +54,12 @@
         const places = document.getElementsByClassName('imporant-places');
         for(const place of places){
             console.log(place.innerText);
+        }
+        //querrySelectorAll
+        const someLi = document.querySelectorAll('.fruits-container li');
+            // console.log(someLi);
+        for (const li of someLi){
+            console.log(li.innerText);
         }
     </script>
 
