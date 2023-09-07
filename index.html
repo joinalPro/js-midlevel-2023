@@ -30,7 +30,7 @@
                 <li>Grapes</li>
             </ul>
         </section>
-        <section>
+        <section id="places-container">
             <h1 id="places-title">Places I will visit</h1>
             <ul>
                 <li class="imporant-places">Bandorbon</li>
@@ -41,6 +41,8 @@
         </section>
     </main>
     <script src="js/dom.js"></script>
+
+    <script src="js/styleInJs.js"></script>
     <script>
         const liCollection = document.getElementsByTagName('li');
         for(const li of liCollection){
@@ -53,13 +55,13 @@
             }
         const places = document.getElementsByClassName('imporant-places');
         for(const place of places){
-            console.log(place.innerText);
+            // console.log(place.innerText);
         }
         //querrySelectorAll
         const someLi = document.querySelectorAll('.fruits-container li');
             // console.log(someLi);
         for (const li of someLi){
-            console.log(li.innerText);
+            // console.log(li.innerText);
         }
     </script>
 
