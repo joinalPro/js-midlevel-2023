@@ -10,7 +10,7 @@
     <header>
         <h1>Welcome to My DOM</h1>
     </header>
-    <main>
+    <main id="main-container">
         <section>
             <h1>My awesome Coding Style</h1>
             <ul>
@@ -32,7 +32,7 @@
         </section>
         <section id="places-container">
             <h1 id="places-title">Places I will visit</h1>
-            <ul>
+            <ul id="places-list">
                 <li class="imporant-places">Bandorbon</li>
                 <li class="imporant-places">Rangamati</li>
                 <li class="imporant-places">Kuwakata</li>
@@ -43,7 +43,7 @@
     <script src="js/dom.js"></script>
     <script src="js/append.js"></script>
     <script src="js/styleInJs.js"></script>
-    
+
     <script>
         const liCollection = document.getElementsByTagName('li');
         for(const li of liCollection){
